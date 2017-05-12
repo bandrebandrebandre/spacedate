@@ -3,6 +3,8 @@ from setuptools import setup, find_packages
 VERSION = '0.1'
 
 requires = [
+    'pytest',
+    'pytest-cov',
     'pyramid_debugtoolbar',
     'alembic',
     'docopt',
@@ -30,5 +32,6 @@ setup(name='spacedate',
       main = spacedate.application:main
 
       [console_scripts]
+      runtests = spacedate.scripts.runtests:main
       """,
       )
