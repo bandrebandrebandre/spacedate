@@ -24,9 +24,10 @@ setup(name='spacedate',
       include_package_data=True,
       zip_safe=False,
       install_requires=requires,
-)
-#      entry_points="""\
- #     [console_scripts]
-  #    compile_stats = npuzz.scripts.run_search:compile_stats
-   #   """,
-    #  )
+      entry_points="""\
+      [paste.app_factory]
+      main = spacedate.application:main
+
+      [console_scripts]
+      """,
+      )
