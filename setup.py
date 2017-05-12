@@ -3,6 +3,7 @@ from setuptools import setup, find_packages
 VERSION = '0.1'
 
 requires = [
+    'pyramid_debugtoolbar',
     'alembic',
     'docopt',
     'lxml',
